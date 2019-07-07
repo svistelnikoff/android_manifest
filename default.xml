@@ -4,6 +4,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+  <remote  name="svistelnikoff"
+           fetch="git@github.com:svistelnikoff/" />
   <default revision="refs/tags/android-9.0.0_r35"
            remote="aosp"
            sync-j="4" />
@@ -707,6 +709,9 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
+  <project path="vendor/gl" remote="svistelnikoff" name="gl-android-training-2019" revision="vendor-gl" />
+  <project path="vendor/gl/apps/gl-android-training" remote="svistelnikoff" name="gl-android-training-2019"
+    revision="svistelnikoff@work-03"/>
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
