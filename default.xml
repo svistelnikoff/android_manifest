@@ -74,7 +74,7 @@
   <project path="device/linaro/bootloader/arm-trusted-firmware" name="device/linaro/bootloader/arm-trusted-firmware" />
   <project path="device/linaro/bootloader/edk2" name="device/linaro/bootloader/edk2" />
   <project path="device/linaro/bootloader/OpenPlatformPkg" name="device/linaro/bootloader/OpenPlatformPkg" />
-  <project path="device/linaro/hikey" name="device/linaro/hikey" groups="device,hikey,pdk" />
+  <project path="device/linaro/hikey" remote="svistelnikoff" name="hikey-linaro-device" revision="svistelnikoff@gl-hikey960-base" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/abi-compliance-checker" name="platform/external/abi-compliance-checker" groups="pdk" />
@@ -501,7 +501,7 @@
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan,pdk-qcom" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="kernel/configs" name="kernel/configs" groups="vts,pdk" />
-  <project path="kernel/hikey-linaro" name="kernel/hikey-linaro" groups="pdk" />
+  <project path="kernel/hikey-linaro" remote="svistelnikoff" name="hikey-linaro-kernel" revision="svistelnikoff@gl-hikey960-4.9-base" />
   <project path="kernel/tests" name="kernel/tests" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
@@ -709,9 +709,7 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
-  <project path="vendor/gl" remote="svistelnikoff" name="gl-android-training-2019" revision="vendor-gl" />
-  <project path="vendor/gl/apps/gl-android-training" remote="svistelnikoff" name="gl-android-training-2019"
-    revision="svistelnikoff@work-03"/>
+  <project path="vendor/gl" remote="svistelnikoff" name="gl-android-training-2019" revision="svistelnikoff@vendor-gl" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
